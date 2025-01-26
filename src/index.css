@@ -1,0 +1,10 @@
+body {
+  background-color: #606c38;
+  color: #fefae0;
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-variation-settings: "wdth" 100;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

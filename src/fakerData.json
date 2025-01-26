@@ -1,0 +1,62 @@
+[
+  {
+    "date": "2025-01-10",
+    "transactionName": "SAMPLE DATA: Restaurant Dinner",
+    "amount": 40,
+    "category": "Food"
+  },
+  {
+    "date": "2025-01-09",
+    "transactionName": "SAMPLE DATA: Public Transport Monthly Pass",
+    "amount": 50,
+    "category": "Transport"
+  },
+  {
+    "date": "2025-01-08",
+    "transactionName": "SAMPLE DATA: Furniture Purchase",
+    "amount": 300,
+    "category": "Housing"
+  },
+  {
+    "date": "2025-01-07",
+    "transactionName": "SAMPLE DATA: Miscellaneous Expenses",
+    "amount": 25,
+    "category": "Miscellaneous"
+  },
+  {
+    "date": "2025-01-06",
+    "transactionName": "SAMPLE DATA: Stock Investment",
+    "amount": 200,
+    "category": "Investments"
+  },
+  {
+    "date": "2025-01-05",
+    "transactionName": "SAMPLE DATA: Doctor Appointment",
+    "amount": 50,
+    "category": "Health"
+  },
+  {
+    "date": "2025-01-04",
+    "transactionName": "SAMPLE DATA: Movie Tickets",
+    "amount": 30,
+    "category": "Entertainment"
+  },
+  {
+    "date": "2025-01-03",
+    "transactionName": "SAMPLE DATA: Grocery Shopping",
+    "amount": 80,
+    "category": "Food"
+  },
+  {
+    "date": "2025-01-02",
+    "transactionName": "SAMPLE DATA: Uber Ride",
+    "amount": 15,
+    "category": "Transport"
+  },
+  {
+    "date": "2025-01-01",
+    "transactionName": "SAMPLE DATA: Rent Payment",
+    "amount": 1200,
+    "category": "Housing"
+  }
+]

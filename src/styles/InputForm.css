@@ -1,0 +1,57 @@
+.inputFields {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+input {
+  height: 30px;
+  font-size: 1em;
+  text-align: center;
+}
+
+select {
+  height: 30px;
+  font-size: 1em;
+}
+
+button {
+  height: 30px;
+  font-size: 1em;
+  background-color: #f0f0f0;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+div ul {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style-type: none;
+  padding: 0px;
+}
+
+div ul li {
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  font-size: 0.8em;
+  padding: 0.5rem 1rem;
+  width: 90%;
+}
+
+div ul li p {
+  flex: 1;
+  justify-content: space-around;
+  margin: 0;
+}
+
+.delete {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.delete:hover {
+  text-decoration: underline;
+}
