@@ -7,9 +7,12 @@ import {
   loadDataFromLocalStorage,
 } from "./DisplayData.tsx";
 
+// Load data from local storage
 loadDataFromLocalStorage();
+// Add faker data
 addFakerData();
 
+// Input component
 function InputComponent({ className, id, type, placeholder }) {
   return (
     <div className={className}>
@@ -18,13 +21,16 @@ function InputComponent({ className, id, type, placeholder }) {
   );
 }
 
+// Input form component
 export default function InputForm() {
   const [transactions, setTransactions] = useState(data);
 
+  // Update the transactions
   useEffect(() => {
     setTransactions([...data]);
   }, []);
 
+  // Handle form submission
   const handleSubmit = () => {
     const date = (
       document.getElementById("dateInput") as HTMLInputElement
@@ -40,7 +46,7 @@ export default function InputForm() {
       document.getElementById("categoryInput") as HTMLInputElement
     ).value;
 
-    // Validate fields
+    // Validate the form
     let errorMessage = "";
     if (!date) errorMessage += "Date is required.\n";
     if (!transactionName) errorMessage += "Transaction Name is required.\n";
@@ -48,23 +54,27 @@ export default function InputForm() {
       errorMessage += "Valid Amount is required.\n";
     if (!category) errorMessage += "Category is required.\n";
 
+    // Display error message
     if (errorMessage) {
       alert(errorMessage.trim());
       return;
     }
 
+    // Add the new transaction
     const newTransaction = { date, transactionName, amount, category };
     data.unshift(newTransaction);
     saveDataToLocalStorage();
     setTransactions([...data]);
   };
 
+  // Handle delete
   const handleDelete = (index: number) => {
     data.splice(index, 1);
     saveDataToLocalStorage();
     setTransactions([...data]);
   };
 
+  // Return the input form
   return (
     <div className="inputForm">
       <div className="inputFields">

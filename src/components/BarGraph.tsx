@@ -11,6 +11,7 @@ import {
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
 import { updateTotals, labelTotals } from "./DisplayData.tsx";
+import { categories } from "./DisplayData.tsx";
 
 ChartJS.register(
   CategoryScale,
@@ -21,16 +22,10 @@ ChartJS.register(
   Legend
 );
 
-export const labels = [
-  "Housing",
-  "Transport",
-  "Food",
-  "Entertainment",
-  "Health",
-  "Investments",
-  "Miscellaneous",
-];
+// Labels for the bar graph
+let labels = categories;
 
+// Options for the bar graph
 export const options = {
   plugins: {
     legend: { display: false },
@@ -45,10 +40,10 @@ export const options = {
     },
   },
 };
-
 ChartJS.defaults.borderColor = "#000000";
 ChartJS.defaults.color = "#000000";
 
+// Bar graph component
 export default function BarGraph() {
   // eslint-disable-next-line
   const [dataReady, setDataReady] = useState(false);
@@ -62,6 +57,7 @@ export default function BarGraph() {
     ],
   });
 
+  // Initialize the data for the bar graph
   const initializeData = () => {
     updateTotals();
     setChartData({
@@ -76,6 +72,7 @@ export default function BarGraph() {
     setDataReady(true);
   };
 
+  // Update the data for the bar graph
   useEffect(() => {
     initializeData();
     const intervalId = setInterval(() => {
@@ -85,12 +82,12 @@ export default function BarGraph() {
     return () => clearInterval(intervalId);
     // eslint-disable-next-line
   }, []);
-
   const remakeGraph = () => {
     setDataReady(false);
     initializeData();
   };
 
+  // Return the bar graph
   return (
     <div
       style={{

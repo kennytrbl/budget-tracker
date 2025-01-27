@@ -23,6 +23,10 @@ button {
   cursor: pointer;
 }
 
+.submit {
+  margin-bottom: 30px;
+}
+
 div ul {
   align-items: center;
   display: flex;
@@ -38,13 +42,14 @@ div ul li {
   display: flex;
   font-size: 0.8em;
   padding: 0.5rem 1rem;
-  width: 90%;
+  width: 95%;
 }
 
 div ul li p {
   flex: 1;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin: 0;
+  padding-right: 100px;
 }
 
 .delete {

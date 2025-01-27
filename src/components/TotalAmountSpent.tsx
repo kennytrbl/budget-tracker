@@ -3,12 +3,15 @@ import "../styles/TotalAmountSpent.css";
 import { totalAmount, updateTotals } from "./DisplayData.tsx";
 
 class TotalAmountSpent extends Component {
+  // Timer for updating the total amount spent
   timer: NodeJS.Timeout | undefined;
 
+  // State for the current total amount spent
   state = {
     currentTotal: totalAmount,
   };
 
+  // Update the total amount spent
   componentDidMount() {
     this.timer = setInterval(() => {
       updateTotals();
@@ -16,10 +19,12 @@ class TotalAmountSpent extends Component {
     }, 1000);
   }
 
+  // Clear the timer
   componentWillUnmount() {
     clearInterval(this.timer);
   }
 
+  // Render the total amount spent
   render() {
     return (
       <div className="totalAmountSpent">

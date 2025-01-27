@@ -1,9 +1,9 @@
 #barGraph {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 1200px;
-  height: 600px;
   background-color: #cbc7ad;
+  display: flex;
+  align-items: center;
+  height: 600px;
+  justify-content: center;
   padding: 20px;
+  width: 1200px;
 }
