@@ -9,7 +9,7 @@ The goal was to create a tool that allows users to easily manage transactions wi
 
 This is a wireframe created before coding this project.
 
-![IMG_1364](https://github.com/user-attachments/assets/010a9ca0-4eeb-4483-8cf4-9c2c748999b3)
+![personal-budget-tracker-wireframe](https://github.com/user-attachments/assets/d5d75ec7-66f9-4cfa-819c-71d950f48b71)
 
 ## Installation
 
