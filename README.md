@@ -1,19 +1,23 @@
 
-# personal-budget-tracker
-[Live Demo](https://personal-budget-tracker-beta.vercel.app/)
+# budget-tracker
+[Live Demo](https://budget-tracker.kennyzhang.dev/)
 
 A website that lets users track expenses, filter spending, and visualize data with interactive bar charts.
 
 
 The goal was to create a tool that allows users to easily manage transactions with real-time updates on totals and graphs. I focused on making the user experience simple, ensuring that users could quickly add, delete, and view their transactions. Local storage was implemented to persist data across sessions, allowing for a seamless experience.
 
+This is a wireframe created before coding this project.
+
+![personal-budget-tracker-wireframe](https://github.com/user-attachments/assets/d5d75ec7-66f9-4cfa-819c-71d950f48b71)
+
 ## Installation
 
-Install personal-budget-tracker with git
+Install budget-tracker with git
 
 ```bash
-  git install https://github.com/kennytrbl/personal-budget-tracker.git
-  cd personal-budget-tracker
+  git install https://github.com/kennytrbl/budget-tracker.git
+  cd budget-tracker
   npm install
   npm start
 ```
