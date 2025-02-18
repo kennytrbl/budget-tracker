@@ -122,7 +122,6 @@ export default function InputForm() {
               <p>${transaction.amount.toFixed(2)}</p>
               <p>{transaction.category}</p>
               <button
-                className="delete"
                 onClick={(e) => {
                   e.stopPropagation();
                   handleDelete(index);
